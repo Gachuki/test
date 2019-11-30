@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Workspace</h2>
+        <form action="/delete" method="GET">
+            <div class="form-group">
+                    <input type="text" name="username" class="form-control">
+            </div>
+            <input type="submit" value="delete" class="btn btn-danger">
+        </form>
+        <br>
+        <hr>
+        <h2>Update</h2>
+        <form action="/update" method="GET">
+            <div class="form-group">
+                <label for="oldname">old name</label>
+                    <input type="text" name="oldname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="newname">New name</label>
+                    <input type="text" name="newname" class="form-control">
+            </div>
+            <input type="submit" value="Update" class="btn btn-primary">
+        </form>
+        <br>
+            <a href="/view" class="btn btn-primary">view all</a>
+           
+    </div>
+    
+    
+</body>
+</html>
